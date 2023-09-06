@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: rgb(59, 59, 59);
+}
+
+/* Header Styles */
+.head {
+    top: 0;
+    left: 0;
+    background: rgb(2, 3, 11);
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    height: 20%;
+}
+
+.head-left {
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+}
+
+
+.head-left h2 {
+    text-transform: uppercase;
+    text-shadow: 0 0 10px whitesmoke;
+    letter-spacing: 0.8rem;
+    color: white;
+}
+
+.head-elements {
+    display: flex;
+}
+
+.head-elements a {
+    text-decoration: none;
+    color: black;
+    background: rgba(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255);
+    box-shadow: 0 0 10px rgba(255, 255, 255);
+    padding: 10px 25px;
+    margin-left: 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size: 30;
+}
+
+.head-elements a:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255);
+}
+
+#wrapper h2 {
+    display: flex;
+    justify-content: center;
+}
+.to-do-container {
+    margin: 7%;
+    color: white;
+    background: #480fe3;
+    justify-content: center;
+    overflow-y: scroll;
+}
+.to-do-container h2 {
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    font-size: 2rem;
+}
+#input {
+    margin-left: 15px;
+    width: 280px;
+    height: 40px;
+    border-radius: 10px;
+}
+#input:active {
+    border: none;
+}
+#add {
+    cursor: pointer;
+    color: white;
+    background: #F64C72;
+    border: 2px solid #F64C72;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+#add:hover {
+    border: 2px solid #F64C72;
+    background: transparent;
+    color: #F64C72;
+}
+#todoList {
+    margin-top: 20px;
+}
+#todoList p {
+   position: relative;
+   text-align: center;
+   margin-top: 1%; 
+   margin-left: 5%;
+   margin-right: 5%; 
+   color: rgb(255, 0, 93);
+   background: #fbe6ea;
+   padding: 8px 10px;
+}
+#todoList p::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #F64C72;
+    padding: 21px 8px;
+    z-index: 1;
+}
+
+/* Container Styles */
+.container {
+    margin: 7%;
+    margin-top: 50%;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.container h3 {
+    text-decoration: underline;
+    font-size: 50;
+}
+
+.container p {
+    margin-top: 4%;
+    font-size: 30;
+}
+input {
+    margin: 1%;
+    width: 30px;
+    height: 30px;
+}
+.container:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255);
+}
+
+.fourth-container {
+    margin: 7%;
+    margin-top: 10%;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.fourth-container h3 {
+    text-decoration: underline;
+    font-size: 50;
+}
+
+.fourth-container p {
+    margin-top: 4%;
+    font-size: 30;
+}
+input {
+    margin: 1%;
+    width: 30px;
+    height: 30px;
+}
+.fourth-container:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255);
+}
+/* Third Container Styles */
+.third-container {
+    margin: 7%;
+    background: rgb(0, 0, 0);
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    overflow: auto;
+}
+
+.third-container h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.third-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.third-container td {
+    border: 2px solid whitesmoke;
+    padding: 35px 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.third-container p {
+    font-size: 15px;
+    margin-left: 3%;
+}
+
+.third-container button {
+    padding: 10px 30px;
+    margin: 5%;
+    background: rgb(255, 0, 68);
+    border-radius: 10px;
+    margin-left: 40%;
+    border: transparent;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.third-container button:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(255, 0, 68);
+    box-shadow: 0 0 10px rgba(255, 0, 68);
+}
+.third-container:hover {
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+.cross-line {
+    text-decoration: line-through;
+    text-decoration-color: rgb(0, 255, 0);
+    text-decoration-thickness: 3px;
+}
+
+/* Second Container Styles */
+.second-container {
+    margin: 7%;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+    display: block;
+}
+.second-container:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255);
+}
+
+.second-container .M_1,
+.second-container .M_2,
+.second-container .M_3,
+.second-container .M_4 {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 5%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 30;
+}
+.M_1 {
+    background: lightblue;
+    border: 2px solid darkblue;
+    box-shadow: 0 0 10px darkblue;
+}
+.M_2 {
+    background: lightcoral;
+    border: 2px solid darkred;
+    box-shadow: 0 0 10px darkred;
+}
+.M_3 {
+    background: lightgreen;
+    border: 2px solid darkgreen;
+    box-shadow: 0 0 10px darkgreen;
+}
+.M_4 {
+    background: lightgoldenrodyellow;
+    border: 2px solid yellow;
+    box-shadow: 0 0 10px yellow;
+}
+
+/* To Learn Styles */
+.to_learn {
+    margin-left: 10%;
+    margin-right: 10%;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    border: 10px solid whitesmoke;
+    padding: 20px;
+}
+
+.to_learn h2 {
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    font-size: 60;
+    margin-bottom: 5px;
+    text-shadow: 0 0 10px whitesmoke;
+}
+
+.to_learn h2::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 12%;
+    height: 2px;
+    width: 0;
+    background: white;
+    transition: width 0.3s ease;
+}
+
+.to_learn h2:hover::after {
+    width: 75%;
+}
+
+.to_learn p {
+    margin-left: 1%;
+    font-size: 45; 
+}
+
+/* Footer Styles */
+footer {
+    margin: 5%;
+    display: flex;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 25;
+}
+
+footer .left-side img {
+    width: 90%;
+    height: 100%;
+}
+
+footer .right-side h2 {
+    margin-top: 2%;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 162, 0);
+    letter-spacing: 0.5rem;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 0.5rem;
+    border: 2px solid rgb(255, 255, 255); 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0); 
+}
+
+footer p {
+    width: 99%;
+    margin-left: 5%;
+}
+footer:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255);
+}
+
+
+@media (max-width: 768px) {
+    .to-do-container {
+        width: 300px;
+    }
+    .head {
+        height: 22%;
+    }
+    .head-left h2 {
+        font-size: 3rem;
+    }
+    .head-elements {
+        margin-left: 10%;
+    }
+    .head-elements a {
+        padding: 10px 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 10;
+    }
+    .container {
+        margin: 5%;
+        margin-top: 50%;
+    }
+    .container h3 {
+       text-decoration: underline;
+       font-size: 30;
+    }
+    .container p {
+       margin-top: 4%;
+       font-size: 14;
+       display: flex;
+    }
+    input {
+       margin: 1%;
+       width: 20px;
+       height: 20px;
+    }
+    .fourth-container {
+        margin: 5%;
+    }
+    .fourth-container h3 {
+       text-decoration: underline;
+       font-size: 30;
+    }
+    .fourth-container p {
+       margin-top: 4%;
+       font-size: 14;
+       display: flex;
+    }
+    .third-container {
+        margin: 5%;
+    }
+    .third-container td {
+        padding: 10px;
+        margin-left: 1%;
+    }
+    .second-container .M_1,
+    .second-container .M_2,
+    .second-container .M_3,
+    .second-container .M_4 {
+        width: 90%;
+        margin: 5%;
+    }
+    .to_learn {
+        width: 90%;
+        margin: 5%;
+    }
+    .to_learn h2 {
+        font-size: 50;
+    }
+    .to_learn p{
+        font-size: 40;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
