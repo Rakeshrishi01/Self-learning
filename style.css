@@ -75,8 +75,8 @@ body {
     font-size: 2rem;
 }
 #input {
-    margin-left: 15px;
-    width: 280px;
+    margin-left: 15%;
+    width: 300px;
     height: 40px;
     border-radius: 10px;
 }
@@ -88,7 +88,7 @@ body {
     color: white;
     background: #F64C72;
     border: 2px solid #F64C72;
-    padding: 8px 20px;
+    padding: 7px 35px;
     border-radius: 5px;
 }
 #add:hover {
@@ -105,6 +105,7 @@ body {
    margin-top: 1%; 
    margin-left: 5%;
    margin-right: 5%; 
+   margin-bottom: 10px;
    color: rgb(255, 0, 93);
    background: #fbe6ea;
    padding: 8px 10px;
@@ -361,8 +362,9 @@ footer:hover {
 
 
 @media (max-width: 768px) {
-    .to-do-container {
-        width: 300px;
+    #add {
+        margin-top: 20px;
+       margin-left: 40%;
     }
     .head {
         height: 22%;
